@@ -404,8 +404,8 @@ h6 {
 .exercise-title i,
 .social-title i,
 .selfcare-title i {
-  cursor: pointer;           /* show pointer on hover */
-  color: #BBC0FF;            /* initial color */
+  cursor: pointer;
+  color: #bbc0ff;
   transition: color 0.25s ease;
 }
 
@@ -415,15 +415,11 @@ h6 {
 .exercise-title i:hover,
 .social-title i:hover,
 .selfcare-title i:hover {
-  color: #FFFFFF;            /* color on hover */
+  color: #ffffff; /* color on hover */
 }
 
-
-/* ============================
-   RESPONSIVENESS — 768px and below
-   ============================ */
+/* RESPONSIVENESS — 768px and below*/
 @media (max-width: 768px) {
-  /* Stack everything vertically */
   .dashboard-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -444,16 +440,16 @@ h6 {
     padding: 1.5rem;
 
     display: flex;
-    flex-direction: row; /* ← side-by-side */
+    flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 1.5rem; /* space between image and text */
+    gap: 1.5rem;
   }
   /* Make name appear on one line */
   .img-container h1 {
-    white-space: nowrap !important; /* forces one line */
+    white-space: nowrap !important;
     display: flex;
-    align-items: center; /* optional: vertical alignment */
+    align-items: center;
   }
 
   .img-container img {
@@ -461,13 +457,11 @@ h6 {
     height: 70px;
   }
 
-  /* Remove the big spacing you had earlier */
   .card-body {
     margin: 0;
     padding: 0;
   }
 
-  /* NAME TEXT */
   .card-body h1 {
     font-size: 1.6rem;
     line-height: 1.2;
@@ -478,10 +472,9 @@ h6 {
     text-align: left;
   }
 
-  /* LIST BECOMES HORIZONTAL */
   .list-container .list-group {
     display: flex;
-    flex-direction: row; /* ← horizontal */
+    flex-direction: row;
     justify-content: space-between;
     width: 100%;
     padding: 1.2rem 1.5rem;
@@ -491,7 +484,6 @@ h6 {
     padding: 0;
   }
 
-  /* Right-side cards now stack vertically */
   .card-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
