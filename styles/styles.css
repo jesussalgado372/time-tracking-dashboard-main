@@ -25,11 +25,12 @@ body {
   padding-right: 5px;
   padding-left: 10px;
 }
-button{
+
+button {
   background: transparent;
   border: 0px;
 }
-/* Make each card fill its grid cell exactly */
+
 .card-grid article {
   height: 100%;
 }
