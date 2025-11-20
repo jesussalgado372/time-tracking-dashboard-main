@@ -17,19 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-
-    <title>Frontend Mentor | Time tracking dashboard</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <title>Time Tracking Dashboard</title>
   </head>
   <body>
     <main class="dashboard-grid">
@@ -50,13 +38,19 @@
         <div class="list-container">
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
-              <button><a href="#" class="card-link blue-link regular-text">Daily</a></button>
+              <button id="daily-Btn">
+                <a href="#" class="card-link blue-link regular-text">Daily</a>
+              </button>
             </li>
             <li class="list-group-item">
-              <button><a href="#" class="card-link white-link regular-text">Weekly</a></button>
+              <button id="weekly-Btn">
+                <a href="#" class="card-link white-link regular-text">Weekly</a>
+              </button>
             </li>
             <li class="list-group-item">
-              <button><a href="#" class="card-link blue-link regular-text">Monthly</a></button>
+              <button id="monthly-Btn">
+                <a href="#" class="card-link blue-link regular-text">Monthly</a>
+              </button>
             </li>
           </ul>
         </div>
@@ -80,8 +74,12 @@
               Work<i class="bi bi-three-dots justify-content-end">...</i>
             </h5>
             <div class="stats-row">
-              <h1 class="text-white light-text">32hrs</h1>
-              <p class="blue-text regular-text">Last Week - 36hrs</p>
+              <h1 id="work-current-Data" class="text-white light-text">
+                320hrs
+              </h1>
+              <p id="work-last-Data" class="blue-text regular-text">
+                Last Week - 360hrs
+              </p>
             </div>
           </div>
         </article>
@@ -102,8 +100,12 @@
               Play<i class="bi bi-three-dots justify-content-end">...</i>
             </h5>
             <div class="stats-row">
-              <h1 class="text-white light-text">10hrs</h1>
-              <p class="blue-text regular-text">Last Week - 8hrs</p>
+              <h1 id="play-current-Data" class="text-white light-text">
+                100hrs
+              </h1>
+              <p id="play-last-Data" class="blue-text regular-text">
+                Last Week - 80hrs
+              </p>
             </div>
           </div>
         </article>
@@ -124,8 +126,12 @@
               Study<i class="bi bi-three-dots justify-content-end">...</i>
             </h5>
             <div class="stats-row">
-              <h1 class="text-white light-text">4hrs</h1>
-              <p class="blue-text regular-text">Last Week - 7hrs</p>
+              <h1 id="study-current-Data" class="text-white light-text">
+                40hrs
+              </h1>
+              <p id="study-last-Data" class="blue-text regular-text">
+                Last Week - 70hrs
+              </p>
             </div>
           </div>
         </article>
@@ -146,8 +152,12 @@
               Exercise<i class="bi bi-three-dots justify-content-end">...</i>
             </h5>
             <div class="stats-row">
-              <h1 class="text-white light-text">4hrs</h1>
-              <p class="blue-text regular-text">Last Week - 5hrs</p>
+              <h1 id="exercise-current-Data" class="text-white light-text">
+                40hrs
+              </h1>
+              <p id="exercise-last-Data" class="blue-text regular-text">
+                Last Week - 50hrs
+              </p>
             </div>
           </div>
         </article>
@@ -168,8 +178,12 @@
               Social<i class="bi bi-three-dots justify-content-end">...</i>
             </h5>
             <div class="stats-row">
-              <h1 class="text-white light-text">5hrs</h1>
-              <p class="blue-text regular-text">Last Week - 10hrs</p>
+              <h1 id="social-current-Data" class="text-white light-text">
+                50hrs
+              </h1>
+              <p id="social-last-Data" class="blue-text regular-text">
+                Last Week - 100hrs
+              </p>
             </div>
           </div>
         </article>
@@ -190,8 +204,12 @@
               Self Care<i class="bi bi-three-dots justify-content-end">...</i>
             </h5>
             <div class="stats-row">
-              <h1 class="text-white light-text">2hrs</h1>
-              <p class="blue-text regular-text">Last Week - 2hrs</p>
+              <h1 id="selfcare-current-Data" class="text-white light-text">
+                20hrs
+              </h1>
+              <p id="selfcare-last-Data" class="blue-text regular-text">
+                Last Week - 20hrs
+              </p>
             </div>
           </div>
         </article>
@@ -199,6 +217,7 @@
       </section>
       <!-- End of the card grid -->
     </main>
+    <script type="module" src="app.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
