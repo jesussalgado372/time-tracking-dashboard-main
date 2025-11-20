@@ -1,0 +1,524 @@
+/* Main dashboard layout */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #0e1323 !important;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Dashboard container */
+.dashboard-grid {
+  display: grid;
+  background-color: #0e1323;
+  grid-template-columns: 250px 3fr;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+  padding-right: 5px;
+  padding-left: 10px;
+}
+
+/* Make each card fill its grid cell exactly */
+.card-grid article {
+  height: 100%;
+}
+
+/* setting up the body with the fonts */
+
+h1,
+h6 {
+  font-family: "Rubik", sans-serif;
+}
+/* Very light text */
+.light-text {
+  font-weight: 300;
+}
+
+/* Regular text */
+.regular-text {
+  font-weight: 400;
+}
+
+/* Medium text */
+.medium-text {
+  font-weight: 500;
+}
+
+/* Bold text */
+.bold-text {
+  font-weight: 700;
+}
+
+/* Main Card */
+.main-card {
+  width: 16rem;
+  height: 33rem;
+  background-color: #1c204b !important;
+  border-radius: 15px;
+  overflow: hidden;
+  color: #1c204b;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-container {
+  width: 100%;
+  height: 22rem;
+  background-color: #5747ea;
+  border-radius: 0px 0px 15px 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.card-body {
+  margin-top: 3rem;
+}
+
+.list-container .list-group,
+.list-container .list-group-item {
+  background-color: transparent !important;
+  border: none;
+  color: #1c204b;
+}
+
+.blue-text {
+  color: #bbc0ff !important;
+}
+
+/* Blue links */
+.blue-link {
+  color: #7078c9;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.blue-link:hover {
+  color: #bbc0ff;
+}
+
+/* White links */
+.white-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.white-link:hover {
+  color: #bbc0ff;
+}
+
+/* work card */
+.work-card {
+  width: 16rem;
+  height: 16rem;
+  background-color: #1c204b;
+  border-radius: 15px 15px 15px 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top background area (for the icon) */
+.work-icon-bg {
+  background-color: #ff8b64;
+  height: 4rem;
+  position: relative;
+}
+
+/* Icon inside the orange background */
+.work-icon-img {
+  position: absolute;
+  top: -8px;
+  right: 20px;
+  width: 60px;
+}
+
+/* Content area under the icon */
+.work-content {
+  height: 85%;
+  background-color: #1c204b;
+  border-radius: 15px;
+  padding: 1.5rem;
+  position: relative;
+  top: -1.5rem;
+  z-index: 2;
+}
+
+.work-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Play Card */
+.play-card {
+  width: 16rem;
+  height: 16rem;
+  background-color: #1c204b;
+  border-radius: 15px 15px 15px 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top background area (for the icon) */
+.play-icon-bg {
+  background-color: #55c2e6;
+  height: 4rem;
+  position: relative;
+}
+
+/* Icon inside the orange background */
+.play-icon-img {
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  width: 60px;
+}
+
+/* Content area under the icon */
+.play-content {
+  height: 85%;
+  background-color: #1c204b;
+  border-radius: 15px;
+  padding: 1.5rem;
+  position: relative;
+  top: -1.5rem;
+  z-index: 2;
+}
+
+.play-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Study Card */
+.study-card {
+  width: 16rem;
+  height: 16rem;
+  background-color: #1c204b;
+  border-radius: 15px 15px 15px 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top background area (for the icon) */
+.study-icon-bg {
+  background-color: #ff5e7d;
+  height: 4rem;
+  position: relative;
+}
+
+/* Icon inside the orange background */
+.study-icon-img {
+  position: absolute;
+  top: -2px;
+  right: 20px;
+  width: 60px;
+}
+
+/* Content area under the icon */
+.study-content {
+  height: 85%;
+  background-color: #1c204b;
+  border-radius: 15px;
+  padding: 1.5rem;
+  position: relative;
+  top: -1.5rem;
+  z-index: 2;
+}
+
+.study-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Exercise Card */
+.exercise-card {
+  width: 16rem;
+  height: 16rem;
+  background-color: #1c204b;
+  border-radius: 15px 15px 15px 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top background area (for the icon) */
+.exercise-icon-bg {
+  background-color: #4bcf82;
+  height: 4rem;
+  position: relative;
+}
+
+/* Icon inside the orange background */
+.exercise-icon-img {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  width: 60px;
+}
+
+/* Content area under the icon */
+.exercise-content {
+  height: 85%;
+  background-color: #1c204b;
+  border-radius: 15px;
+  padding: 1.5rem;
+  position: relative;
+  top: -1.5rem;
+  z-index: 2;
+}
+
+.exercise-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Social Card */
+.social-card {
+  width: 16rem;
+  height: 16rem;
+  background-color: #1c204b;
+  border-radius: 15px 15px 15px 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top background area (for the icon) */
+.social-icon-bg {
+  background-color: #7335d2;
+  height: 4rem;
+  position: relative;
+}
+
+/* Icon inside the orange background */
+.social-icon-img {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  width: 60px;
+}
+
+/* Content area under the icon */
+.social-content {
+  height: 85%;
+  background-color: #1c204b;
+  border-radius: 15px;
+  padding: 1.5rem;
+  position: relative;
+  top: -1.5rem;
+  z-index: 2;
+}
+
+.social-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* SelfCare Card */
+.selfcare-card {
+  width: 16rem;
+  height: 16rem;
+  background-color: #1c204b;
+  border-radius: 15px 15px 15px 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top background area (for the icon) */
+.selfcare-icon-bg {
+  background-color: #f1c75b;
+  height: 4rem;
+  position: relative;
+}
+
+/* Icon inside the orange background */
+.selfcare-icon-img {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  width: 60px;
+}
+
+/* Content area under the icon */
+.selfcare-content {
+  height: 85%;
+  background-color: #1c204b;
+  border-radius: 15px;
+  padding: 1.5rem;
+  position: relative;
+  top: -1.5rem;
+  z-index: 2;
+}
+
+.selfcare-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hover effect for all card content backgrounds */
+.work-content:hover,
+.play-content:hover,
+.study-content:hover,
+.exercise-content:hover,
+.social-content:hover,
+.selfcare-content:hover {
+  background-color: #33397a;
+  transition: background-color 0.25s ease;
+  cursor: pointer;
+}
+
+.work-content,
+.play-content,
+.study-content,
+.exercise-content,
+.social-content,
+.selfcare-content {
+  background-color: #1c204b;
+  border-radius: 15px;
+  padding: 1.5rem;
+  position: relative;
+  top: -1.5rem;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Target all ellipses inside card titles */
+.work-title i,
+.play-title i,
+.study-title i,
+.exercise-title i,
+.social-title i,
+.selfcare-title i {
+  cursor: pointer;           /* show pointer on hover */
+  color: #BBC0FF;            /* initial color */
+  transition: color 0.25s ease;
+}
+
+.work-title i:hover,
+.play-title i:hover,
+.study-title i:hover,
+.exercise-title i:hover,
+.social-title i:hover,
+.selfcare-title i:hover {
+  color: #FFFFFF;            /* color on hover */
+}
+
+
+/* ============================
+   RESPONSIVENESS — 768px and below
+   ============================ */
+@media (max-width: 768px) {
+  /* Stack everything vertically */
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    place-items: center;
+    width: 100%;
+  }
+
+  /* MAIN CARD ADJUSTMENTS */
+  .main-card {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  /* TOP SECTION — image + text side-by-side */
+  .img-container {
+    height: auto;
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: row; /* ← side-by-side */
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem; /* space between image and text */
+  }
+  /* Make name appear on one line */
+  .img-container h1 {
+    white-space: nowrap !important; /* forces one line */
+    display: flex;
+    align-items: center; /* optional: vertical alignment */
+  }
+
+  .img-container img {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* Remove the big spacing you had earlier */
+  .card-body {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* NAME TEXT */
+  .card-body h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .card-body h5 {
+    text-align: left;
+  }
+
+  /* LIST BECOMES HORIZONTAL */
+  .list-container .list-group {
+    display: flex;
+    flex-direction: row; /* ← horizontal */
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+  }
+
+  .list-container .list-group-item {
+    padding: 0;
+  }
+
+  /* Right-side cards now stack vertically */
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 350px;
+    padding: 0;
+  }
+
+  .card-grid article {
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .stats-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .stats-row h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .stats-row p {
+      margin: 0;
+      font-size: 1rem;
+    }
+  }
+}
