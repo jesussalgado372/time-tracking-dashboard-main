@@ -45,3 +45,6 @@ weeklyBtn.addEventListener("click", function() {
 monthlyBtn.addEventListener("click", function() {
   updateTimeframe("monthly");
 });
+
+// Make Weekly the default
+updateTimeframe("weekly");
