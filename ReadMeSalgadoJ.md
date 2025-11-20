@@ -13,8 +13,8 @@ Credit goes to FrontEnd Mentors
 */
 
 /*
-11/19/2025 added the majority of project structure
-11/20/2025 made adjustments to allow to pull data from json file using a function in the app.js
+11/19/2025: added the majority of project structure
+11/20/2025: made adjustments to allow to pull data from json file using a function in the app.js
 */
 
 
