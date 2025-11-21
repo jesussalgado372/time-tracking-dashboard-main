@@ -4,6 +4,7 @@ import data from "./data.json" with { type: "json" };
 const dailyBtn = document.getElementById("daily-Btn");
 const weeklyBtn = document.getElementById("weekly-Btn");
 const monthlyBtn = document.getElementById("monthly-Btn");
+const buttons = document.querySelectorAll('button');
 
 // Update UI function
 function updateTimeframe(timeframe) {
@@ -48,3 +49,17 @@ monthlyBtn.addEventListener("click", function() {
 
 // Make Weekly the default
 updateTimeframe("weekly");
+
+// Loop through each button
+for (let i = 0; i < buttons.length; i++) {
+
+  buttons[i].addEventListener('click', function () {
+    for (let j = 0; j < buttons.length; j++) {
+      const linkInsideButton = buttons[j].querySelector('a');
+      linkInsideButton.style.color = "";
+    }
+    const clickedLink = this.querySelector('a');
+    clickedLink.style.color = "white";
+
+  });
+}
