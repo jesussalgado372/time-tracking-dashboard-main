@@ -19,3 +19,5 @@ Credit goes to FrontEnd Mentors
 
 
 // Peer Review: Brandon Van Horn - website looks clean and good and close to the figma and all the buttons work
+
+//Peer Review: Darcy Rose - looks great! i like how you were able to get the ellipses to light up when hovered. a couple things i noticed that could use some adjustment: the gaps on between the columns could be closer together for laptop L. Also weekly is always white, even when Daily or Monthly are actively displaying. might be worth playing with the javascript on that. Those were the only two things that stood out to me. Well done!
