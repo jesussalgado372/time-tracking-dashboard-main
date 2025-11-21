@@ -15,6 +15,7 @@ Credit goes to FrontEnd Mentors
 /*
 11/19/2025: added the majority of project structure
 11/20/2025: made adjustments to allow to pull data from json file using a function in the app.js
+11/21/2025: adjusted the buttons so that only the active button is highlighted white and the others go back to blue text
 */
 
 
